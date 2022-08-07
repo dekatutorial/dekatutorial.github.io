@@ -22,5 +22,5 @@
 }
 
 .swal2-image {
-  height: 150px;
+  height: !important;
 }
