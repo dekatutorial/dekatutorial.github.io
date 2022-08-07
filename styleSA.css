@@ -1,0 +1,22 @@
+.swal2-popup {
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+}
+
+.swal2-title {
+  font-size: 1.6em !important;
+}
+
+.swal2-styled {
+  color: white !important;
+  background: #ff4e4e !important;
+  padding: 10px 30px;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}
