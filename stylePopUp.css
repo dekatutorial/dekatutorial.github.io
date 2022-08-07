@@ -6,7 +6,7 @@
   -o-border-radius: 20px !important;
 }
 
-.swal2-title {
+.swal2-title, .swal2-html-container {
   font-size: 1.6em !important;
 }
 
