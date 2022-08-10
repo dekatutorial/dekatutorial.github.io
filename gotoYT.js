@@ -1,3 +1,3 @@
 function tutor() {
-  window.location.replace("https://youtube.com/dekatutorial")
+  setTimeout(function(){window.location.replace("https://youtube.com/dekatutorial")}, 3000);
 }
