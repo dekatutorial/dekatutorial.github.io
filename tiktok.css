@@ -58,7 +58,7 @@ a {
   font-size: 0.9em;
 }
 a.yt::after {
-  content: "Youtube : Deka Tutorial";
+  content: "Tutor klik disini";
 }
 a.tt::after {
   content: "Tiktok : @deka_tutorial";
