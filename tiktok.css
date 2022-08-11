@@ -60,9 +60,6 @@ a {
 a.yt::after {
   content: "Tutor klik disini";
 }
-a.tt::after {
-  content: "Tiktok : @deka_tutorial";
-}
 .swal2-popup {
   position: relative;
   background: rgba(0, 0, 0, 0.7);
