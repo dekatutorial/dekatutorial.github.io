@@ -1,3 +1,4 @@
+// Menambahkan WM Link
 function link(){
   var link = document.createElement("div");
   link.classList.add("link");
@@ -18,4 +19,14 @@ function link(){
 
   divLink.appendChild(aYT);
   divLink.appendChild(aTT);
+}
+// Menampilkan text blur
+function txtBlur(elemen, time, txt) {
+  setTimeout(function () {
+    elemen.innerHTML = txt;
+    elemen.style = "display: none;";
+    setTimeout(function () {
+      elemen.style = "display: block; animation: anm 1s;";
+    }, 70);
+  }, time);
 }
