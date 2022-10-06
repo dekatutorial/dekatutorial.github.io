@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  overflow: hidden;
+  background: #3fbafe;
+}
+.preload {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preload p {
+  color: #fff;
+  animation: load 3s ease;
+  -webkit-animation: load 1s ease infinite;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.teks {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.479);
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  transform-origin: top left;
+}
+.teks:nth-child(5n) {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.teks:nth-child(5n + 1) {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.teks:nth-child(5n + 2) {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.teks:nth-child(5n + 3) {
+  background: radial-gradient(#60ef94, #58d56f);
+}
+
+.teks:nth-child(5n + 4) {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+.teks::after {
+  content: "👆🏻";
+  position: absolute;
+  bottom: 20px;
+}
+
+.panda {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: blueviolet; */
+}
+.panda p {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background: white;
+  color: #373737;
+  font-size: 1.6em;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.panda img {
+  width: 230px;
+}
+
+.panda p::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: white;
+  left: 10px;
+  bottom: -10px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.panda p::after {
+  content: "";
+  height: 20px;
+  width: 25px;
+  position: absolute;
+  background: #3fbafe;
+  left: 20px;
+  bottom: -13px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.luv {
+  position: relative;
+}
+.panda .luv i {
+  color: rgb(255, 0, 81);
+  font-size: 5em;
+  text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  margin-top: 40px;
+  animation: jj 0.8s ease-in-out infinite alternate;
+  cursor: pointer;
+  -webkit-animation: jj 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes jj {
+  to {
+    scale: 1.1;
+  }
+}
+.container-modal {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  overflow-y: scroll;
+  display: none;
+  opacity: 0;
+  transition: 1s ease all;
+}
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  scale: 1.1;
+  background: #b69efe;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+.modal {
+  transform: translateY(150px);
+  transition: 1s ease all;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  /* background: blueviolet; */
+}
+.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+.frame {
+  box-sizing: border-box;
+  background: white;
+  margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  width: 85vw;
+  max-width: 400px;
+  padding: 30px 15px 20px;
+  /* opacity: 0; */
+}
+.frame img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.frame p {
+  font-size: 1.4em;
+  font-weight: 600;
+  /* padding: 10px 0; */
+}
+.modal a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: white;
+  color: #232323;
+  padding: 7px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.modal .kirimPesan {
+  padding-bottom: 100px;
+}
+
+/* Lope */
+
+.lope {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-around;
+}
+.lope span {
+  color: white;
+  position: relative;
+  margin-top: -40px;
+  animation: animate 5s linear infinite;
+  opacity: 0.3;
+  font-size: 25px;
+}
+.lope span i {
+  font-size: 30px;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(110vh) scale(1);
+  }
+}
+a {
+  z-index: 3;
+}
+.ucapan {
+  display: none;
+}
+marquee {
+  width: 100%;
+  background: blueviolet;
+}
