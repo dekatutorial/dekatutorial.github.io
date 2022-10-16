@@ -195,6 +195,10 @@ var stiker1 = document.querySelector(".stiker").children[0];
 var stiker2 = document.querySelector(".stiker").children[1];
 var stiker3 = document.querySelector(".stiker").children[2];
 
+stiker1.src = gambarStiker1;
+stiker2.src = gambarStiker2;
+stiker3.src = gambarStiker3;
+
 stiker2.style = "display: none";
 stiker3.style = "display: none";
 
