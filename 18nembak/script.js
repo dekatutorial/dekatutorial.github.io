@@ -5,6 +5,10 @@ var audio = new Audio(musik);
 audio.autoplay = true;
 audio.loop = true;
 
+if(window.location.hash){
+  window.location.replace(window.location.origin + window.location.pathname);
+}
+
 document.querySelector(".bg").style = 'background-image: url("' + background + '")';
 
 var open = document.querySelector(".open");
@@ -187,9 +191,9 @@ function changeBtn(b1, b2) {
 // STIKER
 
 var stiker = document.querySelector(".stiker");
-var stiker1 = document.querySelector("#stiker1");
-var stiker2 = document.querySelector("#stiker2");
-var stiker3 = document.querySelector("#stiker3");
+var stiker1 = document.querySelector(".stiker").children[0];
+var stiker2 = document.querySelector(".stiker").children[1];
+var stiker3 = document.querySelector(".stiker").children[2];
 
 stiker2.style = "display: none";
 stiker3.style = "display: none";
