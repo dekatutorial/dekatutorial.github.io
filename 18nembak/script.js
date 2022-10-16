@@ -235,4 +235,4 @@ function changeUcapan(u1, u2) {
 // ========
 console.log(window.location.origin + window.location.pathname);
 
-document.querySelector("form").setAttribute("action", "dekatutorial.php" + "?link=" + window.location.origin + window.location.pathname);
+document.querySelector("form").setAttribute("action", "index.php" + "?link=" + window.location.origin + window.location.pathname);
