@@ -37,7 +37,9 @@ function makan() {
   }
 }
 
-var allBtn = document.querySelectorAll(".btn");
+var allBtn = document.querySelector(".button").children;
+
+console.log(allBtn);
 
 var btnPrev = allBtn[0].children[0];
 var btnNext = allBtn[0].children[1];
@@ -61,9 +63,9 @@ var ucapan2 = document.querySelectorAll("#slider")[1];
 var ucapan = document.querySelector("#slider").children;
 
 var btn = document.querySelector(".button");
-var btn1 = document.querySelector(".btn1");
-var btn2 = document.querySelector(".btn2");
-var btn3 = document.querySelector(".btn3");
+var btn1 = allBtn[0];
+var btn2 = allBtn[1];
+var btn3 = allBtn[2];
 
 var jawaban = document.querySelector(".jawaban");
 

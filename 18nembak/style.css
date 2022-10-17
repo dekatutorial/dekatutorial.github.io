@@ -94,7 +94,7 @@
   display: flex;
   justify-content: center;
 }
-.button .btn button {
+.button div button {
   height: 45px;
   width: 100px;
   font-size: 1.1em;
@@ -110,20 +110,20 @@
   -o-border-radius: 10px;
 }
 
-.button .btn button:disabled {
+.button div button:disabled {
   background: rgb(224, 224, 224);
 }
 
-.btn1,
-.btn2,
-.btn3 {
+.button div:nth-child(1),
+.button div:nth-child(2),
+.button div:nth-child(3) {
   width: 220px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.btn3 button {
+.button div:nth-child(3) button {
   width: 130px !important;
 }
 
