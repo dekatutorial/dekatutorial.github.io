@@ -199,8 +199,8 @@ stiker1.src = gambarStiker1;
 stiker2.src = gambarStiker2;
 stiker3.src = gambarStiker3;
 
-stiker2.style = "display: none";
-stiker3.style = "display: none";
+// stiker2.style = "display: none";
+// stiker3.style = "display: none";
 
 function changeStiker(s1, s2) {
   stiker.style = "transition: .3s ease; opacity: 0; scale: 0.3; transform: translateY(-100px)";
