@@ -41,6 +41,10 @@
   max-height: 170px;
 }
 
+.top img:nth-child(2), .top img:nth-child(3) {
+  display: none;
+}
+
 /* =========== */
 
 #slider {
