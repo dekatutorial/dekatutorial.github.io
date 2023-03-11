@@ -5,7 +5,6 @@ function htmlscript(musik, idtele) {
   var openright = document.querySelector(".right");
   var lock = document.querySelector(".lock");
   var opentxt = document.querySelector(".text");
-  // ==============
 
   if (musik != "") {
     musiku = new Audio(musik);
@@ -16,7 +15,6 @@ function htmlscript(musik, idtele) {
   var wmwm = "Yang Mau Custom Order Aja di Deka Tutorial 😎";
 
   console.log("%c" + wmwm, "color: white; font-size: 2.5em; font-weight: 800; text-shadow: 2px 1.5px 0 red, -2px -1.5px 0 blue;");
-  // =========
 
   lock.addEventListener("click", () => {
     if (musik != "") {
@@ -53,67 +51,51 @@ function htmlscript(musik, idtele) {
   function ilangBawah() {
     opentxt.style = "transition: .5s ease all; transform: translateY(50px); opacity: 0";
   }
-  // =========
 
   if (tampil) {
     var eHelp = document.createElement("div");
     eHelp.setAttribute("class", "help");
-
     var eDesc = document.createElement("div");
     eDesc.setAttribute("class", "desc");
-
     var eA = document.createElement("a");
     eA.setAttribute("href", "#");
     eA.textContent = "Tutorial Bikin";
-
     var eInput = document.createElement("input");
     eInput.setAttribute("hidden", "");
     eInput.setAttribute("type", "checkbox");
     eInput.setAttribute("name", "menu");
     eInput.setAttribute("id", "menu");
-
     var eLabel = document.createElement("label");
     eLabel.setAttribute("for", "menu");
-
     var eIcon = document.createElement("div");
     eIcon.setAttribute("class", "icon");
-
     var eLine = document.createElement("div");
     eLine.setAttribute("class", "line");
-
     var eClose = document.createElement("div");
     eClose.setAttribute("class", "close");
-
     var eDiv1 = document.createElement("div");
     var eDiv2 = document.createElement("div");
     var eDiv3 = document.createElement("div");
     var eDiv4 = document.createElement("div");
     var eDiv5 = document.createElement("div");
-
     eHelp.appendChild(eDesc);
     eDesc.appendChild(eA);
-
     eHelp.appendChild(eInput);
-
     eHelp.appendChild(eLabel);
     eLabel.appendChild(eIcon);
-
     eIcon.appendChild(eLine);
     eLine.appendChild(eDiv1);
     eLine.appendChild(eDiv2);
     eLine.appendChild(eDiv3);
-
     eIcon.appendChild(eClose);
     eClose.appendChild(eDiv4);
     eClose.appendChild(eDiv5);
     open.after(eHelp);
-
     var menu = document.querySelector("#menu");
     var icon = document.querySelector(".icon");
     var line = document.querySelector(".line");
     var close = document.querySelector(".close");
     var menudesc = document.querySelector(".desc");
-
     menu.addEventListener("change", (e) => {
       menuku(e.currentTarget);
     });
@@ -155,7 +137,6 @@ function htmlscript(musik, idtele) {
       menudesc.style = "transition: .2s ease all; scale: 0;";
     }
 
-    // ======================
     var eWm = document.createElement("div");
     eWm.setAttribute("class", "tandaair");
 
@@ -166,14 +147,10 @@ function htmlscript(musik, idtele) {
     eWm.appendChild(eAwm);
     document.querySelector("body").appendChild(eWm);
   }
-  // ===================
   var slider = document.getElementById("slider"),
     sliderItems = document.getElementById("items");
-  // prev = document.getElementById("prev"),
-  // next = document.getElementById("next");
   var wrapper = slider,
     items = sliderItems;
-  // =============================================
   var posX1 = 0,
     posX2 = 0,
     posInitial,
@@ -188,33 +165,11 @@ function htmlscript(musik, idtele) {
     cloneLast = lastSlide.cloneNode(false),
     index = 0,
     allowShift = true;
-
-  // Clone first and last slide
-  // items.appendChild(cloneFirst);
-  // items.insertBefore(cloneLast, firstSlide);
   wrapper.classList.add("loaded");
-
-  // Mouse and Touch events
   items.onmousedown = dragStart;
-
-  // Touch events
   items.addEventListener("touchstart", dragStart);
   items.addEventListener("touchend", dragEnd);
   items.addEventListener("touchmove", dragAction);
-
-  // Click events
-  // prev.addEventListener("click", function () {
-  //   if (index != 0) {
-  //     shiftSlide(-1);
-  //   }
-  // });
-  // next.addEventListener("click", function () {
-  //   if (index != slidesLength - 1) {
-  //     shiftSlide(1);
-  //   }
-  // });
-
-  // Transition events
   items.addEventListener("transitionend", checkIndex);
 
   function dragStart(e) {
@@ -242,7 +197,6 @@ function htmlscript(musik, idtele) {
       posX1 = e.clientX;
     }
     items.style.left = items.offsetLeft - posX2 + "px";
-    // console.log(posX2);
   }
 
   function dragEnd(e) {
@@ -278,7 +232,6 @@ function htmlscript(musik, idtele) {
         index--;
       }
     }
-    // console.log(index);
 
     allowShift = false;
   }
@@ -286,22 +239,9 @@ function htmlscript(musik, idtele) {
   function checkIndex() {
     items.classList.remove("shifting");
 
-    // if (index == -1) {
-    //   items.style.left = -(slidesLength * slideSize) + "px";
-    //   index = slidesLength - 1;
-    // }
-
-    // if (index == slidesLength) {
-    //   console.log(slidesLength);
-    //   items.style.left = -(1 * slideSize) + "px";
-    //   index = 0;
-    // }
 
     allowShift = true;
   }
-  // console.log(index);
-  // =============================
-
   var pesanku;
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   var link = location.href;
@@ -310,13 +250,6 @@ function htmlscript(musik, idtele) {
   async function openmodal() {
     await swalo.fire({ title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim", showCloseButton: true }).then(async (result) => {
       if (result.isConfirmed) {
-        swalo.fire({
-          title: "Mengirim pesan",
-          didOpen: () => {
-            swalo.showLoading();
-          },
-        });
-        swalo.showLoading();
         pesanku = result.value;
         console.log(pesanku);
 
@@ -333,7 +266,13 @@ function htmlscript(musik, idtele) {
         console.log(fulldate);
 
         if (pesanku) {
-          // local
+          swalo.fire({
+            title: "Mengirim pesan",
+            didOpen: () => {
+              swalo.showLoading();
+            },
+          });
+          swalo.showLoading();
           $.ajax({
             url: "",
             type: "POST",
@@ -362,7 +301,6 @@ function htmlscript(musik, idtele) {
               }
             },
           });
-          // tele
           if (idtele != "") {
             pesanku = "Pesan : \n" + pesanku + "\n\n" + fulldate + "\n" + link;
             $.ajax({
@@ -394,7 +332,6 @@ function htmlscript(musik, idtele) {
           }
         } else {
           await swalo.fire({ confirmButtonText: "Ok", title: "Jangan dikosongin dong" });
-
           openmodal();
         }
       } else {
@@ -428,26 +365,3 @@ function htmlscript(musik, idtele) {
     });
   }
 }
-
-// <div class="help">
-//   <div class="desc">
-//     <a href="">Tutorial Bikin</a>
-//   </div>
-//   <input hidden type="checkbox" name="menu" id="menu" />
-//   <label for="menu">
-//     <div class="icon">
-//       <div class="line">
-//         <div></div>
-//         <div></div>
-//         <div></div>
-//       </div>
-//       <div class="close">
-//         <div></div>
-//         <div></div>
-//       </div>
-//     </div>
-//   </label>
-// </div>
-
-// <a style="display: none" id="prev" class="control prev"></a>
-// <a style="display: none" id="next" class="control next"></a>
