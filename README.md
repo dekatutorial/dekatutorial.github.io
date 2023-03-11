@@ -1,8 +1,7 @@
 <h1 >Selamat datang di deka tutorial..</h1>
 <h3 >Silahkan kalian boleh gunakan, tapi dilarang untuk dibuat konten</h3>
-<h4 >Terimakasih</h4>
 
-## Connect with me  
+<!-- ## Connect with me   -->
 <div align="start">
 <a href="https://instagram.com/deka_tutorial" target="_blank">
 <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
