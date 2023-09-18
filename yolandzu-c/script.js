@@ -1,6 +1,8 @@
 document.querySelector(".wm").children[0].textContent = tag;
 var bgku = document.querySelector(".bg").children;
 
+document.querySelector(".row").children[0].src = "https://dekatutorial.github.io/yolandzu-c/kado.png";
+
 bgku[5].style = 'background-image: url("' + background1 + '")';
 bgku[4].style = 'background-image: url("' + background2 + '")';
 bgku[3].style = 'background-image: url("' + background3 + '")';
