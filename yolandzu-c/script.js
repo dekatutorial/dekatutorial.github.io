@@ -152,15 +152,6 @@ function munculkado() {
   setTimeout(() => {
     kadoku[0].style = "animation: anmkado 0.5s ease; opacity: 1;";
   }, 100);
-  setTimeout(() => {
-    kadoku[1].style = "animation: anmkado 0.5s ease; opacity: 1;";
-  }, 200);
-  setTimeout(() => {
-    kadoku[2].style = "animation: anmkado 0.5s ease; opacity: 1;";
-  }, 300);
-  setTimeout(() => {
-    kadoku[3].style = "animation: anmkado 0.5s ease; opacity: 1;";
-  }, 400);
 }
 function slide2() {
   ketik(ucapan2, ".typetxt2", munculkado);
