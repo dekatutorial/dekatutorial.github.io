@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+  text-align: center;
+}
+
+.open {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.open img {
+  height: 100px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 30px hsla(0, 0%, 100%, 0.265);
+}
+.open p {
+  color: #fff;
+  text-shadow: 0 0 3px black;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.open.hide {
+  transition: 1s ease;
+  transform: translateY(-100vh);
+}
+.content {
+  padding-top: 15vh;
+}
+.content img {
+  height: 150px;
+  animation: anm-up 1s ease;
+  -webkit-animation: anm-up 1s ease;
+}
+.content p {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 3px black;
+  margin: auto;
+  margin-top: 28px;
+  max-height: 20vh;
+  max-width: 400px;
+  overflow-y: auto;
+}
+.btn-group {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 180px;
+  /* background: navajowhite; */
+  margin-top: 28px;
+  visibility: hidden;
+}
+.btn-group button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 6px 0;
+  width: 80px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-group.show {
+  visibility: visible;
+  animation: anm-up 1s ease;
+  -webkit-animation: anm-up 1s ease;
+}
+@keyframes anm-up {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+.swal2-popup {
+  border-radius: 16px;
+}
+.swal2-image {
+  height: 150px;
+  margin-bottom: 0;
+}
+.swal2-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.swal2-actions button {
+  border-radius: 12px !important;
+}
+@keyframes shake {
+  0%,
+  06.66% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translate(-5px, -5px) rotate(-5deg) scale(1.05);
+  }
+  15% {
+    transform: translate(5px, 5px) rotate(5deg) scale(1.05);
+  }
+  20% {
+    transform: translate(-5px, 5px) rotate(-5deg) scale(1.05);
+  }
+  25% {
+    transform: translate(5px, -5px) rotate(5deg) scale(1.05);
+  }
+  30% {
+    transform: translate(-5px, 5px) rotate(-5deg) scale(1.05);
+  }
+  35% {
+    transform: translate(5px, -5px) rotate(5deg) scale(1.05);
+  }
+  40% {
+    transform: translate(0, 0) rotate(0deg) scale(1.05);
+  }
+  45% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+/* Apply the shake animation to an element */
+.shake {
+  display: inline-block;
+  animation: shake 2s infinite;
+  -webkit-animation: shake 2s infinite;
+}
+.d-none {
+  display: none;
+}
