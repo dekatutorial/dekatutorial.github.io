@@ -8,7 +8,7 @@ const fireworks = new Fireworks.default(container, {
   },
   sound: {
     enabled: 1,
-    files: ["explosion0.mp3", "explosion1.mp3", "explosion2.mp3"],
+    files: ["https://dekatutorial.github.io/v/fireworks/explosion0.mp3", "https://dekatutorial.github.io/v/fireworks/explosion1.mp3", "https://dekatutorial.github.io/v/fireworks/explosion2.mp3"],
     volume: {
       min: 10,
       max: 15,
