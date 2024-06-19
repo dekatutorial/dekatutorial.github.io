@@ -19,4 +19,4 @@ const fireworks = new Fireworks.default(container, {
     },
   },
 });
-fireworks.start();
+//fireworks.start();
