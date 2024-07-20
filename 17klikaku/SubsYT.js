@@ -61,7 +61,7 @@ var stiker = "";
 
 function watermark(wm) {
   document.querySelector(".txtFrame").innerHTML = txtFoto;
-  document.querySelector(".pesanwa").href = "https://api.whatsapp.com?phone=" + nomorWA;
+  document.querySelector(".pesanwa").href = "https://wa.me/" + nomorWA;
   document.querySelector(".foto").src = foto;
   document.querySelector(".bg").style = 'background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("'+foto+'");';
 
